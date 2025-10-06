@@ -1,0 +1,163 @@
+:root{
+  --accent:#06b6d4; 
+  --accent2:#3b82f6; 
+  --muted:#6b7280;
+  --card:#ffffff;
+  --bg:#f0f9ff;
+  --star:#facc15;
+}
+body{font-family:'Poppins',sans-serif;margin:0;background:var(--bg);color:#0f172a;line-height:1.6}
+
+/* HEADER */
+header{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;padding:16px 20px;position:sticky;top:0;z-index:10}
+.nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto}
+.nav-links a{color:#fff;margin:0 10px;text-decoration:none;font-weight:500}
+.nav-links a:hover{color:#fef3c7;text-decoration:underline}
+.search-box input{padding:6px 8px;border-radius:6px;border:0;color:#0f172a}
+
+/* HERO */
+.hero{background:linear-gradient(rgba(6,182,212,0.85),rgba(59,130,246,0.85)),url('https://placehold.co/1500x400/1e3a8a/ffffff/png?text=Ayan+Biotech+Research') center/cover no-repeat;color:#fff;text-align:center;padding:100px 20px}
+.hero-logo{width:90px;height:90px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-weight:700;color:var(--accent2);font-size:28px}
+.hero h1{font-size:56px;margin:0 0 12px;font-weight:700;text-shadow:0 4px 12px rgba(0,0,0,0.4)}
+.hero p{font-size:20px;margin:0 0 20px}
+.hero button{background:linear-gradient(90deg,var(--accent2),var(--accent));color:#fff;padding:12px 28px;border:0;border-radius:30px;font-weight:600;cursor:pointer;transition:all 0.3s}
+
+/* ABOUT */
+.about{background:#fff;padding:40px;border-radius:16px;box-shadow:0 6px 14px rgba(0,0,0,0.08);margin:40px 0}
+.about h2{color:var(--accent2);margin-bottom:15px}
+
+/* PRODUCTS CAROUSEL */
+.carousel-wrapper{position:relative;margin:30px 0}
+.carousel{display:flex;gap:20px;overflow:hidden;transition:transform 0.5s ease}
+.carousel-item{flex:0 0 280px;background:#fff;border-radius:16px;box-shadow:0 8px 16px rgba(0,0,0,0.08);text-align:center;padding:14px;transition:transform 0.3s}
+.carousel-item:hover{transform:translateY(-6px)}
+.carousel-item img{width:100%;height:150px;object-fit:cover;border-radius:12px;margin-bottom:8px}
+.carousel-control{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.8);border:none;padding:10px;border-radius:50%;cursor:pointer;z-index:5;width:40px;height:40px;font-size:20px;line-height:1;box-shadow:0 2px 5px rgba(0,0,0,0.2)}
+.carousel-control.prev{left:0px}
+.carousel-control.next{right:0px}
+
+/* QUERY FORM */
+/* QUERY FORM */
+.query-form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin: 20px 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.query-form.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.query-form input,
+.query-form textarea {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+  border-color: var(--accent2);
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.2);
+  outline: none;
+}
+
+.query-form button {
+  padding: 12px 22px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.query-form button:hover {
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* QUERY ITEMS */
+.query-item {
+  background: #fff;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.query-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.query-item-status {
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--star);
+  color: #000;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.mark-solved {
+  cursor: pointer;
+  color: #fff;
+  background: #10b981;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.mark-solved:hover {
+  background: #059669;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* FOOTER */
+footer{margin-top:40px;padding:30px 0;background:#1e3a8a;color:#fff;text-align:center}
+footer a{color:#93c5fd;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayan Biotech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container nav">
+    <div class="logo">Ayan Biotech</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#queries">Query Box</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." />
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-logo">AB</div>
+    <h1>Ayan Biotech</h1>
+    <p>Innovating Healthcare with trusted medicines and biotech solutions worldwide.</p>
+    <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+      Explore Products
+    </button>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="container about" id="about">
+  <h2>About Us</h2>
+  <div class="about-card">
+    <p><strong>Ayan Biotech Company</strong> is a trusted pharmaceutical and biotechnology firm dedicated to delivering high-quality, safe, and affordable medicines to improve lives and promote better healthcare.</p>
+
+    <h3>Our Vision</h3>
+    <p>To become a global leader in pharmaceuticals and biotechnology by ensuring accessible healthcare for all through innovation and excellence.</p>
+
+    <h3>Our Mission</h3>
+    <ul>
+      <li>To manufacture and supply medicines that meet <b>international quality standards</b>.</li>
+      <li>To make healthcare affordable, reliable, and accessible.</li>
+      <li>To continuously innovate through research and development (R&D).</li>
+      <li>To follow ethical practices and maintain transparency with customers and partners.</li>
+    </ul>
+
+    <h3>Why Choose Ayan Biotech Company?</h3>
+    <ul>
+      <li>✅ Strict quality control and testing at every stage</li>
+      <li>✅ Wide range of pharmaceutical and biotech products</li>
+      <li>✅ Experienced team of professionals & scientists</li>
+      <li>✅ Commitment to customer care and ethical standards</li>
+    </ul>
+
+    <p>At <strong>Ayan Biotech Company</strong>, we believe that <em>“Health is the foundation of happiness.”</em> With this belief, we are committed to building a healthier future for communities across the world.</p>
+  </div>
+</section>
+
+<section id="products" class="container">
+  <h2>Our Flagship Products</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-control prev" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="carousel" id="carouselTrack">
+      <!-- Product Item 1 -->
+      <div class="carousel-item animate-on-scroll">
+        <img src="https://themewagon.github.io/pharmative/images/product_07_large.png" alt="Product 1">
+        <h4>Paracetamol</h4>
+        <p>Effective pain relief and fever reducer.</p>
+      </div>
+      <!-- Product Item 2 -->
+      <div class="carousel-item animate-on-scroll">
+        <img src="https://themewagon.github.io/pharmative/images/product_07_large.png" alt="Product 2">
+        <h4>Vitamin Capsules</h4>
+        <p>Boost immunity and overall health.</p>
+      </div>
+      <!-- Product Item 3 -->
+      <div class="carousel-item animate-on-scroll">
+        <img src="https://themewagon.github.io/pharmative/images/product_07_large.png" alt="Product 3">
+        <h4>Cough Syrup</h4>
+        <p>Relieve cough and cold symptoms effectively.</p>
+      </div>
+    </div>
+    <button class="carousel-control next" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+
+<!-- Query Form -->
+<section id="queries" class="container">
+  <h2>Product Queries</h2>
+  <form id="queryForm" class="query-form">
+    <input type="text" id="product" placeholder="Product Name" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+    <textarea id="question" rows="3" placeholder="Ask about dosage, availability, etc..." required></textarea>
+    <button type="submit">Submit Query</button>
+  </form>
+
+  <h3>Recent Queries</h3>
+  <div id="queryList"></div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <h3>Contact Us</h3>
+  <p>Email: <a href="mailto:info@ayanbiotech.example">info@ayanbiotech.example</a></p>
+  <p>Phone: +1 (555) 123-4567</p>
+  <p>Address: 123 Pharma St, Innovation City</p>
+  <p class="copy">&copy; 2025 Ayan Biotech Company. All rights reserved.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
